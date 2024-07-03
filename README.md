@@ -5,8 +5,8 @@ Simple OpenAPI spec for the HN API to do strongly typed code generation off of.
 Spec: https://raw.githubusercontent.com/andenacitelli/hacker-news-api-openapi/main/exports/api.yaml
 
 - Based off the original API here: https://github.com/HackerNews/API
-- Built with [zod](https://github.com/colinhacks/zod) schemas and exported to OpenAPI via [@asteasolutions/zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi).
-- End result is validated with [Redocly CLI](https://redocly.com/docs/cli) and a few tests that make real HN calls to validate the schemas.
+- Built with [zod](https://github.com/colinhacks/zod) schemas and exported to OpenAPI via [@asteasolutions/zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi). Rebuilt in a pre-commit hook, nothing else needed.
+- End result is validated with [Redocly CLI](https://redocly.com/docs/cli) and a few basic tests that make real HN calls to validate the schemas.
 
 ## Contributing
 
