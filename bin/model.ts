@@ -30,7 +30,7 @@ export const ItemSchema = z.object({
     .array(z.number().int())
     .optional()
     .describe("The ids of the item's comments, in ranked display order."),
-  url: z.string().describe("The URL of the story."),
+  url: z.string().optional().describe("The URL of the story."),
   score: z
     .number()
     .int()
