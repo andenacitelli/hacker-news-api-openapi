@@ -127,4 +127,116 @@ paths:
                   - id
                   - created
                   - karma
+  /maxitem.json:
+    get:
+      operationId: getMaxItem
+      summary: Retrieve the current largest item id.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: integer
+  /topstories.json:
+    get:
+      operationId: topstories
+      summary: Retrieve a list of the 500 top stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /newstories.json:
+    get:
+      operationId: newstories
+      summary: Retrieve a list of the 500 newest stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /beststories.json:
+    get:
+      operationId: beststories
+      summary: Retrieve a list of the 500 best stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /askstories.json:
+    get:
+      operationId: askstories
+      summary: Retrieve a list of 'Ask HN' stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /showstories.json:
+    get:
+      operationId: showstories
+      summary: Retrieves list of 'Show HN' stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /jobstories.json:
+    get:
+      operationId: jobstories
+      summary: Retrieve list of 'Who's hiring' and 'Who wants to be hired' stories
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: integer
+  /updates.json:
+    get:
+      operationId: updates
+      summary: Get a list of updates to items and profiles.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: integer
+                  profiles:
+                    type: array
+                    items:
+                      type: integer
+                required:
+                  - items
+                  - profiles
 webhooks: {}
