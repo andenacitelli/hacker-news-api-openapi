@@ -6,7 +6,14 @@ import {
   OpenAPIRegistry,
   OpenApiGeneratorV31,
 } from "@asteasolutions/zod-to-openapi";
-import { ItemSchema, UserSchema } from "./model.js";
+import {
+  ItemResponseSchema,
+  MaxItemResponseSchema,
+  STORY_TYPES,
+  StoriesResponseSchema,
+  UpdatesResponseSchema,
+  UserResponseSchema,
+} from "./model.js";
 
 extendZodWithOpenApi(z);
 
@@ -27,7 +34,7 @@ registry.registerPath({
       description: "Success",
       content: {
         "application/json": {
-          schema: ItemSchema,
+          schema: ItemResponseSchema,
         },
       },
     },
@@ -49,7 +56,7 @@ registry.registerPath({
       description: "Success",
       content: {
         "application/json": {
-          schema: UserSchema,
+          schema: UserResponseSchema,
         },
       },
     },
@@ -66,57 +73,25 @@ registry.registerPath({
       description: "Success",
       content: {
         "application/json": {
-          schema: z.number().int(),
+          schema: MaxItemResponseSchema,
         },
       },
     },
   },
 });
 
-for (const { operationId, path, summary } of [
-  {
-    operationId: "topstories",
-    path: "/topstories.json",
-    summary: "Retrieve a list of the 500 top stories",
-  },
-  {
-    operationId: "newstories",
-    path: "/newstories.json",
-    summary: "Retrieve a list of the 500 newest stories",
-  },
-  {
-    operationId: "beststories",
-    path: "/beststories.json",
-    summary: "Retrieve a list of the 500 best stories",
-  },
-  {
-    operationId: "askstories",
-    path: "/askstories.json",
-    summary: "Retrieve a list of 'Ask HN' stories",
-  },
-  {
-    operationId: "showstories",
-    path: "/showstories.json",
-    summary: "Retrieves list of 'Show HN' stories",
-  },
-  {
-    operationId: "jobstories",
-    path: "/jobstories.json",
-    summary:
-      "Retrieve list of 'Who's hiring' and 'Who wants to be hired' stories",
-  },
-]) {
+for (const storyType of STORY_TYPES) {
   registry.registerPath({
     method: "get",
-    operationId,
-    path,
-    summary,
+    operationId: `${storyType}.json`,
+    path: `/${storyType}.json`,
+    summary: `Retrieve top 500 entries of story type ${storyType}`,
     responses: {
       200: {
         description: "Success",
         content: {
           "application/json": {
-            schema: z.array(z.number().int()),
+            schema: StoriesResponseSchema,
           },
         },
       },
@@ -134,10 +109,7 @@ registry.registerPath({
       description: "Success",
       content: {
         "application/json": {
-          schema: z.object({
-            items: z.array(z.number().int()),
-            profiles: z.array(z.number().int()),
-          }),
+          schema: UpdatesResponseSchema,
         },
       },
     },

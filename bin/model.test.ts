@@ -1,22 +1,63 @@
 import { test, expect } from "vitest";
-import { ItemSchema, UserSchema } from "./model.js";
+import {
+  ItemResponseSchema,
+  MaxItemResponseSchema,
+  STORY_TYPES,
+  StoriesResponseSchema,
+  UpdatesResponseSchema,
+  UserResponseSchema,
+} from "./model.js";
 
-test("Story", async () => {
+const getJsonResponseForUrl = async (url: string): Promise<unknown> => {
+  const response = await fetch(url);
+  return response.json();
+};
+
+test.concurrent("item", async () => {
   const id = 40869877;
-  const response = await fetch(
-    `https://hacker-news.firebaseio.com/v0/item/${id}.json`
+  const result = ItemResponseSchema.parse(
+    await getJsonResponseForUrl(
+      `https://hacker-news.firebaseio.com/v0/item/${id}.json`
+    )
   );
-  const json = await response.json();
-  const result = ItemSchema.parse(json);
   expect(result.id).toBe(id);
 });
 
-test("User", async () => {
+test.concurrent("user", async () => {
   const id = "dang";
-  const response = await fetch(
-    `https://hacker-news.firebaseio.com/v0/user/${id}.json`
+  const result = UserResponseSchema.parse(
+    await getJsonResponseForUrl(
+      `https://hacker-news.firebaseio.com/v0/user/${id}.json`
+    )
   );
-  const json = await response.json();
-  const result = UserSchema.parse(json);
   expect(result.id).toBe(id);
+});
+
+test.concurrent("maxitem", async () => {
+  const result = MaxItemResponseSchema.parse(
+    await getJsonResponseForUrl(
+      `https://hacker-news.firebaseio.com/v0/maxitem.json`
+    )
+  );
+  expect(result).toBeGreaterThanOrEqual(40870954); // current value as of Jul 3, 6:15pm CT
+});
+
+test.each(STORY_TYPES)("%s", async (resource: string) => {
+  const result = StoriesResponseSchema.parse(
+    await getJsonResponseForUrl(
+      `https://hacker-news.firebaseio.com/v0/${resource}.json`
+    )
+  );
+  expect(result).toBeDefined();
+  expect(result.length).toBeGreaterThan(0);
+});
+
+test.concurrent("updates", async () => {
+  const result = UpdatesResponseSchema.parse(
+    await getJsonResponseForUrl(
+      `https://hacker-news.firebaseio.com/v0/updates.json`
+    )
+  );
+  expect(result.items.length).toBeGreaterThan(0);
+  expect(result.profiles.length).toBeGreaterThan(0);
 });

@@ -140,8 +140,8 @@ paths:
                 type: integer
   /topstories.json:
     get:
-      operationId: topstories
-      summary: Retrieve a list of the 500 top stories
+      operationId: topstories.json
+      summary: Retrieve top 500 entries of story type topstories
       responses:
         "200":
           description: Success
@@ -153,8 +153,8 @@ paths:
                   type: integer
   /newstories.json:
     get:
-      operationId: newstories
-      summary: Retrieve a list of the 500 newest stories
+      operationId: newstories.json
+      summary: Retrieve top 500 entries of story type newstories
       responses:
         "200":
           description: Success
@@ -166,8 +166,8 @@ paths:
                   type: integer
   /beststories.json:
     get:
-      operationId: beststories
-      summary: Retrieve a list of the 500 best stories
+      operationId: beststories.json
+      summary: Retrieve top 500 entries of story type beststories
       responses:
         "200":
           description: Success
@@ -179,8 +179,8 @@ paths:
                   type: integer
   /askstories.json:
     get:
-      operationId: askstories
-      summary: Retrieve a list of 'Ask HN' stories
+      operationId: askstories.json
+      summary: Retrieve top 500 entries of story type askstories
       responses:
         "200":
           description: Success
@@ -192,8 +192,8 @@ paths:
                   type: integer
   /showstories.json:
     get:
-      operationId: showstories
-      summary: Retrieves list of 'Show HN' stories
+      operationId: showstories.json
+      summary: Retrieve top 500 entries of story type showstories
       responses:
         "200":
           description: Success
@@ -205,8 +205,8 @@ paths:
                   type: integer
   /jobstories.json:
     get:
-      operationId: jobstories
-      summary: Retrieve list of 'Who's hiring' and 'Who wants to be hired' stories
+      operationId: jobstories.json
+      summary: Retrieve top 500 entries of story type jobstories
       responses:
         "200":
           description: Success
@@ -235,7 +235,7 @@ paths:
                   profiles:
                     type: array
                     items:
-                      type: integer
+                      type: string
                 required:
                   - items
                   - profiles

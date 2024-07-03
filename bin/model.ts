@@ -1,6 +1,15 @@
 import { z } from "zod";
 
-export const ItemSchema = z.object({
+export const STORY_TYPES = [
+  "topstories",
+  "newstories",
+  "beststories",
+  "askstories",
+  "showstories",
+  "jobstories",
+];
+
+export const ItemResponseSchema = z.object({
   id: z.number().int().describe("The item's unique id."),
   deleted: z.boolean().optional().describe("`true` if the item is deleted."),
   type: z
@@ -51,7 +60,7 @@ export const ItemSchema = z.object({
     .describe("In the case of stories or polls, the total comment count."),
 });
 
-export const UserSchema = z.object({
+export const UserResponseSchema = z.object({
   id: z
     .string()
     .describe("The user's unique username. Case-sensitive. Required."),
@@ -70,4 +79,13 @@ export const UserSchema = z.object({
     .array(z.number().int())
     .optional()
     .describe("List of the user's stories, polls and comments."),
+});
+
+export const MaxItemResponseSchema = z.number().int();
+
+export const StoriesResponseSchema = z.array(z.number().int());
+
+export const UpdatesResponseSchema = z.object({
+  items: z.array(z.number().int()),
+  profiles: z.array(z.string()),
 });
