@@ -1,0 +1,2 @@
+pnpm generate
+git add exports/api.yaml
