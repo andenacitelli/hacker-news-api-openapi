@@ -7,7 +7,7 @@ info:
     url: https://github.com/HackerNews/API/blob/master/LICENSE
 security: []
 servers:
-  - url: " https://hacker-news.firebaseio.com/v0"
+  - url: https://hacker-news.firebaseio.com/v0
 components:
   schemas: {}
   parameters: {}
@@ -31,17 +31,13 @@ paths:
                 type: object
                 properties:
                   id:
-                    type: string
+                    type: integer
                     description: The item's unique id.
                   deleted:
-                    type:
-                      - boolean
-                      - "null"
+                    type: boolean
                     description: "`true` if the item is deleted."
                   type:
-                    type:
-                      - string
-                      - "null"
+                    type: string
                     enum:
                       - job
                       - story
@@ -50,37 +46,25 @@ paths:
                       - pollopt
                     description: The type of the item.
                   by:
-                    type:
-                      - string
-                      - "null"
+                    type: string
                     description: The username of the item's author.
                   time:
-                    type:
-                      - integer
-                      - "null"
+                    type: integer
                     description: Creation date of the item, in Unix Time.
                   text:
-                    type:
-                      - string
-                      - "null"
+                    type: string
                     description: The comment, story or poll text. HTML.
                   dead:
-                    type:
-                      - boolean
-                      - "null"
+                    type: boolean
                     description: "`true` if the item is dead."
                   parent:
-                    type:
-                      - integer
-                      - "null"
+                    type: integer
                     description: "The comment's parent: either another comment or the relevant
                       story."
                   poll:
                     description: The pollopt's associated poll.
                   kids:
-                    type:
-                      - array
-                      - "null"
+                    type: array
                     items:
                       type: integer
                     description: The ids of the item's comments, in ranked display order.
@@ -88,42 +72,20 @@ paths:
                     type: string
                     description: The URL of the story.
                   score:
-                    type:
-                      - integer
-                      - "null"
+                    type: integer
                     description: The story's score, or the votes for a pollopt.
                   title:
-                    type:
-                      - string
-                      - "null"
+                    type: string
                     description: The title of the story, poll or job. HTML.
                   parts:
                     type: array
                     items:
-                      type:
-                        - integer
-                        - "null"
+                      type: integer
                       description: A list of related pollopts, in display order.
                   descendants:
-                    type:
-                      - array
-                      - "null"
-                    items:
-                      type: integer
+                    type: number
                     description: In the case of stories or polls, the total comment count.
                 required:
                   - id
-                  - deleted
-                  - type
-                  - by
-                  - time
-                  - text
-                  - dead
-                  - parent
-                  - kids
                   - url
-                  - score
-                  - title
-                  - parts
-                  - descendants
 webhooks: {}
