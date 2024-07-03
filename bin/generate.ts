@@ -6,7 +6,7 @@ import {
   OpenAPIRegistry,
   OpenApiGeneratorV31,
 } from "@asteasolutions/zod-to-openapi";
-import { ItemSchema } from "./model.js";
+import { ItemSchema, UserSchema } from "./model.js";
 
 extendZodWithOpenApi(z);
 
@@ -28,6 +28,28 @@ registry.registerPath({
       content: {
         "application/json": {
           schema: ItemSchema,
+        },
+      },
+    },
+  },
+});
+
+registry.registerPath({
+  method: "get",
+  operationId: "getUser",
+  path: "/user/{id}.json",
+  summary: "Retrieve a user from the API.",
+  request: {
+    params: z.object({
+      id: z.string(),
+    }),
+  },
+  responses: {
+    200: {
+      description: "Success",
+      content: {
+        "application/json": {
+          schema: UserSchema,
         },
       },
     },

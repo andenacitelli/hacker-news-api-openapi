@@ -50,3 +50,24 @@ export const ItemSchema = z.object({
     .optional()
     .describe("In the case of stories or polls, the total comment count."),
 });
+
+export const UserSchema = z.object({
+  id: z
+    .string()
+    .describe("The user's unique username. Case-sensitive. Required."),
+  created: z
+    .number()
+    .int()
+    .describe(
+      "Creation date of the user, in [Unix Time](http://en.wikipedia.org/wiki/Unix_time)."
+    ),
+  karma: z.number().int().describe("The user's karma."),
+  about: z
+    .string()
+    .optional()
+    .describe("The user's optional self-description. HTML."),
+  submitted: z
+    .array(z.number().int())
+    .optional()
+    .describe("List of the user's stories, polls and comments."),
+});

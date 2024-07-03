@@ -87,4 +87,44 @@ paths:
                     description: In the case of stories or polls, the total comment count.
                 required:
                   - id
+  /user/{id}.json:
+    get:
+      operationId: getUser
+      summary: Retrieve a user from the API.
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: id
+          in: path
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The user's unique username. Case-sensitive. Required.
+                  created:
+                    type: integer
+                    description: Creation date of the user, in [Unix
+                      Time](http://en.wikipedia.org/wiki/Unix_time).
+                  karma:
+                    type: integer
+                    description: The user's karma.
+                  about:
+                    type: string
+                    description: The user's optional self-description. HTML.
+                  submitted:
+                    type: array
+                    items:
+                      type: integer
+                    description: List of the user's stories, polls and comments.
+                required:
+                  - id
+                  - created
+                  - karma
 webhooks: {}
