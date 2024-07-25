@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.7.0",
-    "@redocly/cli": "^1.18.0",
+    "@redocly/cli": "^1.18.1",
     "@types/node": "^20.14.11",
     "eslint": "^9.7.0",
     "husky": "^9.1.1",
