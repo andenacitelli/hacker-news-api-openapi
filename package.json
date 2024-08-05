@@ -18,7 +18,7 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@redocly/cli": "^1.19.0",
-    "@types/node": "^20.14.13",
+    "@types/node": "^20.14.14",
     "eslint": "^9.8.0",
     "husky": "^9.1.4",
     "npm-check-updates": "^16.14.20",
