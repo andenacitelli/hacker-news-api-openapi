@@ -34,7 +34,7 @@ importers:
         specifier: ^1.25.7
         version: 1.25.7(encoding@0.1.13)(enzyme@3.11.0)
       '@types/node':
-        specifier: ^20.16.12
+        specifier: ^20.16.13
         version: 20.16.13
       eslint:
         specifier: ^9.13.0
