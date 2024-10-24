@@ -21,7 +21,7 @@
     "@types/node": "^20.16.13",
     "eslint": "^9.13.0",
     "husky": "^9.1.6",
-    "npm-check-updates": "^16.14.20",
+    "npm-check-updates": "^17.1.4",
     "prettier": "^3.3.3",
     "typescript-eslint": "8.11.0",
     "vite-tsconfig-paths": "^4.3.2",
