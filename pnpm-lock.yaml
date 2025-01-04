@@ -34,8 +34,8 @@ importers:
         specifier: ^1.26.1
         version: 1.26.1(encoding@0.1.13)(enzyme@3.11.0)
       '@types/node':
-        specifier: ^20.17.10
-        version: 20.17.10
+        specifier: ^20.17.11
+        version: 20.17.11
       eslint:
         specifier: ^9.17.0
         version: 9.17.0
@@ -53,10 +53,10 @@ importers:
         version: 8.19.0(eslint@9.17.0)(typescript@5.7.2)
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.7.2)(vite@5.3.3(@types/node@20.17.10))
+        version: 4.3.2(typescript@5.7.2)(vite@5.3.3(@types/node@20.17.11))
       vitest:
         specifier: ^2.1.8
-        version: 2.1.8(@types/node@20.17.10)
+        version: 2.1.8(@types/node@20.17.11)
 
 packages:
 
@@ -646,8 +646,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@20.17.10':
-    resolution: {integrity: sha512-/jrvh5h6NXhEauFFexRin69nA0uHJ5gwk4iDivp/DeoEua3uwCUto6PC86IpRITBOs4+6i2I56K5x5b6WYGXHA==}
+  '@types/node@20.17.11':
+    resolution: {integrity: sha512-Ept5glCK35R8yeyIeYlRIZtX6SLRyqMhOFTgj5SOkMpLTdw3SEHI9fHx60xaUZ+V1aJxQJODE+7/j5ocZydYTg==}
 
   '@types/semver-utils@1.1.3':
     resolution: {integrity: sha512-T+YwkslhsM+CeuhYUxyAjWm7mJ5am/K10UX40RuA6k6Lc7eGtq8iY2xOzy7Vq0GOqhl/xZl5l2FwURZMTPTUww==}
@@ -3443,7 +3443,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@20.17.10':
+  '@types/node@20.17.11':
     dependencies:
       undici-types: 6.19.8
 
@@ -3535,13 +3535,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.8(vite@5.3.3(@types/node@20.17.10))':
+  '@vitest/mocker@2.1.8(vite@5.3.3(@types/node@20.17.11))':
     dependencies:
       '@vitest/spy': 2.1.8
       estree-walker: 3.0.3
       magic-string: 0.30.12
     optionalDependencies:
-      vite: 5.3.3(@types/node@20.17.10)
+      vite: 5.3.3(@types/node@20.17.11)
 
   '@vitest/pretty-format@2.1.8':
     dependencies:
@@ -5977,13 +5977,13 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  vite-node@2.1.8(@types/node@20.17.10):
+  vite-node@2.1.8(@types/node@20.17.11):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 5.3.3(@types/node@20.17.10)
+      vite: 5.3.3(@types/node@20.17.11)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5994,30 +5994,30 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.3.2(typescript@5.7.2)(vite@5.3.3(@types/node@20.17.10)):
+  vite-tsconfig-paths@4.3.2(typescript@5.7.2)(vite@5.3.3(@types/node@20.17.11)):
     dependencies:
       debug: 4.3.5
       globrex: 0.1.2
       tsconfck: 3.1.1(typescript@5.7.2)
     optionalDependencies:
-      vite: 5.3.3(@types/node@20.17.10)
+      vite: 5.3.3(@types/node@20.17.11)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.3.3(@types/node@20.17.10):
+  vite@5.3.3(@types/node@20.17.11):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.17.10
+      '@types/node': 20.17.11
       fsevents: 2.3.3
 
-  vitest@2.1.8(@types/node@20.17.10):
+  vitest@2.1.8(@types/node@20.17.11):
     dependencies:
       '@vitest/expect': 2.1.8
-      '@vitest/mocker': 2.1.8(vite@5.3.3(@types/node@20.17.10))
+      '@vitest/mocker': 2.1.8(vite@5.3.3(@types/node@20.17.11))
       '@vitest/pretty-format': 2.1.8
       '@vitest/runner': 2.1.8
       '@vitest/snapshot': 2.1.8
@@ -6033,11 +6033,11 @@ snapshots:
       tinyexec: 0.3.1
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 5.3.3(@types/node@20.17.10)
-      vite-node: 2.1.8(@types/node@20.17.10)
+      vite: 5.3.3(@types/node@20.17.11)
+      vite-node: 2.1.8(@types/node@20.17.11)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 20.17.10
+      '@types/node': 20.17.11
     transitivePeerDependencies:
       - less
       - lightningcss
