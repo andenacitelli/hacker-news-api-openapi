@@ -31,8 +31,8 @@ importers:
         specifier: ^9.19.0
         version: 9.19.0
       '@redocly/cli':
-        specifier: ^1.27.2
-        version: 1.27.2(encoding@0.1.13)(enzyme@3.11.0)
+        specifier: ^1.28.0
+        version: 1.28.0(encoding@0.1.13)(enzyme@3.11.0)
       '@types/node':
         specifier: ^20.17.16
         version: 20.17.16
@@ -503,17 +503,17 @@ packages:
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
-  '@redocly/cli@1.27.2':
-    resolution: {integrity: sha512-bJi3Hb3eaTo7lnMXAJ3HQwQS45vrNXwaqNwh/nbgjkzeb4/5p7GXgB6nWkakwKUDiPVMX2rBoa8MCodNaaQ3Yg==}
-    engines: {node: '>=14.19.0', npm: '>=7.0.0'}
+  '@redocly/cli@1.28.0':
+    resolution: {integrity: sha512-x77XS1OSNKe0O0pcn1p/As4obnxUNuzo5pYTifVDTaF0uir4xky+kJy9shcZXORMOYnl0N0y7iz8X92hT6iatw==}
+    engines: {node: '>=18.17.0', npm: '>=10.8.2'}
     hasBin: true
 
   '@redocly/config@0.20.1':
     resolution: {integrity: sha512-TYiTDtuItiv95YMsrRxyCs1HKLrDPtTvpaD3+kDKXBnFDeJuYKZ+eHXpCr6YeN4inxfVBs7DLhHsQcs9srddyQ==}
 
-  '@redocly/openapi-core@1.27.2':
-    resolution: {integrity: sha512-qVrDc27DHpeO2NRCMeRdb4299nijKQE3BY0wrA+WUHlOLScorIi/y7JzammLk22IaTvjR9Mv9aTAdjE1aUwJnA==}
-    engines: {node: '>=14.19.0', npm: '>=7.0.0'}
+  '@redocly/openapi-core@1.28.0':
+    resolution: {integrity: sha512-jnUsOFnz8w71l14Ww34Iswlj0AI4e/R0C5+K2W4v4GaY/sUkpH/145gHLJYlG4XV0neET4lNIptd4I8+yLyEHQ==}
+    engines: {node: '>=18.17.0', npm: '>=10.8.2'}
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     resolution: {integrity: sha512-Tya6xypR10giZV1XzxmH5wr25VcZSncG0pZIjfePT0OVBvqNEurzValetGNarVrGiq66EBVAFn15iYX4w6FKgQ==}
@@ -3306,9 +3306,9 @@ snapshots:
       require-from-string: 2.0.2
       uri-js-replace: 1.0.1
 
-  '@redocly/cli@1.27.2(encoding@0.1.13)(enzyme@3.11.0)':
+  '@redocly/cli@1.28.0(encoding@0.1.13)(enzyme@3.11.0)':
     dependencies:
-      '@redocly/openapi-core': 1.27.2(encoding@0.1.13)
+      '@redocly/openapi-core': 1.28.0
       abort-controller: 3.0.0
       chokidar: 3.6.0
       colorette: 1.4.0
@@ -3318,7 +3318,6 @@ snapshots:
       glob: 7.2.3
       handlebars: 4.7.8
       mobx: 6.13.0
-      node-fetch: 2.7.0(encoding@0.1.13)
       pluralize: 8.0.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -3337,7 +3336,7 @@ snapshots:
 
   '@redocly/config@0.20.1': {}
 
-  '@redocly/openapi-core@1.27.2(encoding@0.1.13)':
+  '@redocly/openapi-core@1.28.0':
     dependencies:
       '@redocly/ajv': 8.11.2
       '@redocly/config': 0.20.1
@@ -3346,11 +3345,9 @@ snapshots:
       js-levenshtein: 1.1.6
       js-yaml: 4.1.0
       minimatch: 5.1.6
-      node-fetch: 2.7.0(encoding@0.1.13)
       pluralize: 8.0.0
       yaml-ast-parser: 0.0.43
     transitivePeerDependencies:
-      - encoding
       - supports-color
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
@@ -5425,7 +5422,7 @@ snapshots:
   redoc@2.2.0(core-js@3.37.1)(encoding@0.1.13)(enzyme@3.11.0)(mobx@6.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@cfaester/enzyme-adapter-react-18': 0.8.0(enzyme@3.11.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@redocly/openapi-core': 1.27.2(encoding@0.1.13)
+      '@redocly/openapi-core': 1.28.0
       classnames: 2.5.1
       core-js: 3.37.1
       decko: 1.2.0
