@@ -25,7 +25,7 @@
     "prettier": "^3.4.2",
     "typescript-eslint": "8.22.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.9"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^7.3.0",
