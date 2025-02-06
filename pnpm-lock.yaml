@@ -31,8 +31,8 @@ importers:
         specifier: ^9.19.0
         version: 9.19.0
       '@redocly/cli':
-        specifier: ^1.28.0
-        version: 1.28.0(encoding@0.1.13)(enzyme@3.11.0)
+        specifier: ^1.28.1
+        version: 1.28.3(encoding@0.1.13)(enzyme@3.11.0)
       '@types/node':
         specifier: ^20.17.16
         version: 20.17.16
@@ -503,17 +503,17 @@ packages:
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
-  '@redocly/cli@1.28.0':
-    resolution: {integrity: sha512-x77XS1OSNKe0O0pcn1p/As4obnxUNuzo5pYTifVDTaF0uir4xky+kJy9shcZXORMOYnl0N0y7iz8X92hT6iatw==}
-    engines: {node: '>=18.17.0', npm: '>=10.8.2'}
+  '@redocly/cli@1.28.3':
+    resolution: {integrity: sha512-dnBIkPZ2YGCS2vUl5+FbKZUwn8E94d+I+vV8L5GQ/L9rOYvHXt5zv6ZqCugwMAcgzcYOT3cQsqu6wm9OBsArYw==}
+    engines: {node: '>=18.17.0', npm: '>=9.5.0'}
     hasBin: true
 
   '@redocly/config@0.20.1':
     resolution: {integrity: sha512-TYiTDtuItiv95YMsrRxyCs1HKLrDPtTvpaD3+kDKXBnFDeJuYKZ+eHXpCr6YeN4inxfVBs7DLhHsQcs9srddyQ==}
 
-  '@redocly/openapi-core@1.28.0':
-    resolution: {integrity: sha512-jnUsOFnz8w71l14Ww34Iswlj0AI4e/R0C5+K2W4v4GaY/sUkpH/145gHLJYlG4XV0neET4lNIptd4I8+yLyEHQ==}
-    engines: {node: '>=18.17.0', npm: '>=10.8.2'}
+  '@redocly/openapi-core@1.28.3':
+    resolution: {integrity: sha512-PtUnjtU9rYA+72PlN3MiR/J++PQI0q6AMV7hIHJQmtsEMtB1OU8l3duT5Txkpc6JJi7deHg66UpzVznImz3OCw==}
+    engines: {node: '>=18.17.0', npm: '>=9.5.0'}
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     resolution: {integrity: sha512-Tya6xypR10giZV1XzxmH5wr25VcZSncG0pZIjfePT0OVBvqNEurzValetGNarVrGiq66EBVAFn15iYX4w6FKgQ==}
@@ -3306,9 +3306,9 @@ snapshots:
       require-from-string: 2.0.2
       uri-js-replace: 1.0.1
 
-  '@redocly/cli@1.28.0(encoding@0.1.13)(enzyme@3.11.0)':
+  '@redocly/cli@1.28.3(encoding@0.1.13)(enzyme@3.11.0)':
     dependencies:
-      '@redocly/openapi-core': 1.28.0
+      '@redocly/openapi-core': 1.28.3
       abort-controller: 3.0.0
       chokidar: 3.6.0
       colorette: 1.4.0
@@ -3336,7 +3336,7 @@ snapshots:
 
   '@redocly/config@0.20.1': {}
 
-  '@redocly/openapi-core@1.28.0':
+  '@redocly/openapi-core@1.28.3':
     dependencies:
       '@redocly/ajv': 8.11.2
       '@redocly/config': 0.20.1
@@ -5422,7 +5422,7 @@ snapshots:
   redoc@2.2.0(core-js@3.37.1)(encoding@0.1.13)(enzyme@3.11.0)(mobx@6.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@cfaester/enzyme-adapter-react-18': 0.8.0(enzyme@3.11.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@redocly/openapi-core': 1.28.0
+      '@redocly/openapi-core': 1.28.3
       classnames: 2.5.1
       core-js: 3.37.1
       decko: 1.2.0
