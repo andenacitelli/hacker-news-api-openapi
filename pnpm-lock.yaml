@@ -31,7 +31,7 @@ importers:
         specifier: ^9.19.0
         version: 9.19.0
       '@redocly/cli':
-        specifier: ^1.28.1
+        specifier: ^1.28.2
         version: 1.28.3(encoding@0.1.13)(enzyme@3.11.0)
       '@types/node':
         specifier: ^20.17.17
