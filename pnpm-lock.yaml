@@ -31,8 +31,8 @@ importers:
         specifier: ^9.20.0
         version: 9.20.0
       '@redocly/cli':
-        specifier: ^1.28.5
-        version: 1.28.5(encoding@0.1.13)
+        specifier: ^1.29.0
+        version: 1.29.0(encoding@0.1.13)
       '@types/node':
         specifier: ^20.17.19
         version: 20.17.19
@@ -500,16 +500,16 @@ packages:
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
-  '@redocly/cli@1.28.5':
-    resolution: {integrity: sha512-06EIhhqW9tmrlGutpZFFqjnNTIX7wXHvP7BBw6vKJjy6nd++9nHz+B8feeeoJHC7Q2vK7XoCuOMDzqY6BNCCug==}
+  '@redocly/cli@1.29.0':
+    resolution: {integrity: sha512-xpvcZUCFzp2sZCv3WB8ffrFTSUA7Ha2CucI6E6YJrv5d1i8jupeDIClPJ6dwWLrTfTgP/0e6c6R436pwSwzMGg==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
     hasBin: true
 
   '@redocly/config@0.20.1':
     resolution: {integrity: sha512-TYiTDtuItiv95YMsrRxyCs1HKLrDPtTvpaD3+kDKXBnFDeJuYKZ+eHXpCr6YeN4inxfVBs7DLhHsQcs9srddyQ==}
 
-  '@redocly/openapi-core@1.28.5':
-    resolution: {integrity: sha512-eAuL+x1oBbodJksPm4UpFU57A6z1n1rx9JNpD87CObwtbRf5EzW29Ofd0t057bPGcHc8cYZtZzJ69dcRQ9xGdg==}
+  '@redocly/openapi-core@1.29.0':
+    resolution: {integrity: sha512-Ju8POuRjYLTl6JfaSMq5exzhw4E/f1Qb7fGxgS4/PDSTzS1jzZ/UUJRBPeiQ1Ag7yuxH6JwltOr2iiltnBey1w==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
@@ -2916,9 +2916,9 @@ snapshots:
       require-from-string: 2.0.2
       uri-js-replace: 1.0.1
 
-  '@redocly/cli@1.28.5(encoding@0.1.13)':
+  '@redocly/cli@1.29.0(encoding@0.1.13)':
     dependencies:
-      '@redocly/openapi-core': 1.28.5
+      '@redocly/openapi-core': 1.29.0
       abort-controller: 3.0.0
       chokidar: 3.6.0
       colorette: 1.4.0
@@ -2945,7 +2945,7 @@ snapshots:
 
   '@redocly/config@0.20.1': {}
 
-  '@redocly/openapi-core@1.28.5':
+  '@redocly/openapi-core@1.29.0':
     dependencies:
       '@redocly/ajv': 8.11.2
       '@redocly/config': 0.20.1
@@ -4586,7 +4586,7 @@ snapshots:
 
   redoc@2.4.0(core-js@3.37.1)(encoding@0.1.13)(mobx@6.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
-      '@redocly/openapi-core': 1.28.5
+      '@redocly/openapi-core': 1.29.0
       classnames: 2.5.1
       core-js: 3.37.1
       decko: 1.2.0
