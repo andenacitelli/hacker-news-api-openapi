@@ -31,7 +31,7 @@ importers:
         specifier: ^9.21.0
         version: 9.21.0
       '@redocly/cli':
-        specifier: ^1.31.1
+        specifier: ^1.31.2
         version: 1.31.3(ajv@6.12.6)(encoding@0.1.13)
       '@types/node':
         specifier: ^20.17.19
@@ -2070,9 +2070,6 @@ packages:
   open@10.1.0:
     resolution: {integrity: sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==}
     engines: {node: '>=18'}
-
-  openapi-sampler@1.5.1:
-    resolution: {integrity: sha512-tIWIrZUKNAsbqf3bd9U1oH6JEXo8LNYuDlXw26By67EygpjT+ArFnsxxyTMjFWRfbqo5ozkvgSQDK69Gd8CddA==}
 
   openapi-sampler@1.6.1:
     resolution: {integrity: sha512-s1cIatOqrrhSj2tmJ4abFYZQK6l5v+V4toO5q1Pa0DyN8mtyqy2I+Qrj5W9vOELEtybIMQs/TBZGVO/DtTFK8w==}
@@ -4924,11 +4921,6 @@ snapshots:
       is-inside-container: 1.0.0
       is-wsl: 3.1.0
 
-  openapi-sampler@1.5.1:
-    dependencies:
-      '@types/json-schema': 7.0.15
-      json-pointer: 0.6.2
-
   openapi-sampler@1.6.1:
     dependencies:
       '@types/json-schema': 7.0.15
@@ -5185,7 +5177,7 @@ snapshots:
       marked: 4.3.0
       mobx: 6.13.0
       mobx-react: 9.1.1(mobx@6.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      openapi-sampler: 1.5.1
+      openapi-sampler: 1.6.1
       path-browserify: 1.0.1
       perfect-scrollbar: 1.5.5
       polished: 4.3.1
