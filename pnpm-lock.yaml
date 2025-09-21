@@ -34,7 +34,7 @@ importers:
         specifier: ^1.34.5
         version: 1.34.5(ajv@6.12.6)(encoding@0.1.13)
       '@types/node':
-        specifier: ^20.19.16
+        specifier: ^20.19.17
         version: 20.19.17
       eslint:
         specifier: ^9.35.0
