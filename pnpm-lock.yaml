@@ -31,8 +31,8 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5
       '@redocly/cli':
-        specifier: ^1.34.22
-        version: 1.34.22(ajv@6.14.0)(encoding@0.1.13)(supports-color@7.2.0)
+        specifier: ^1.34.24
+        version: 1.34.24(ajv@6.14.0)(encoding@0.1.13)(supports-color@7.2.0)
       '@types/node':
         specifier: ^20.19.43
         version: 20.19.43
@@ -625,20 +625,20 @@ packages:
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
-  '@redocly/cli@1.34.22':
-    resolution: {integrity: sha512-0z65bJjhnTt0E50dUz2rrHLlUox+v/Z+X5LJCWrXZJYK+My0FoB2SNnWIEghSbgCPBmoKkKrYcDvlWzYVF3kYg==}
+  '@redocly/cli@1.34.24':
+    resolution: {integrity: sha512-AxK0XXQVqGG6vcR0vRczSLeYy24KFJMebj4DR6I8WZ9/yJBP0KPDS/3vpSd+VoBG37dwkBnMPnFHJQwwd3KcuQ==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
     hasBin: true
 
   '@redocly/config@0.22.0':
     resolution: {integrity: sha512-gAy93Ddo01Z3bHuVdPWfCwzgfaYgMdaZPcfL7JZ7hWJoK9V0lXDbigTWkhiPFAaLWzbOJ+kbUQG1+XwIm0KRGQ==}
 
-  '@redocly/openapi-core@1.34.22':
-    resolution: {integrity: sha512-dEyx4uHh6Pc6ZkdU9Xe8rA4h12Odq6QKU/fqseBn07xwVwskhHiF3KHhqmw5BR+jAiFTvKTmwCafFql/k1pSzA==}
+  '@redocly/openapi-core@1.34.24':
+    resolution: {integrity: sha512-jDFMu4zirFVOF9nEWCT31s7OzzVhkxZkb4lO3yZhkdPXAOspLo10ED9thVgm6gtI0dJBTLa+mNP0IYeZpVSYGA==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
 
-  '@redocly/respect-core@1.34.22':
-    resolution: {integrity: sha512-4gc75TuNNavPq3YqYaIwevtIpKX6lQSdExLAxwpj1rQ0HHc260N4WSH0eI2TGCGAeM9JeSIhF9CRitqp9OcMjg==}
+  '@redocly/respect-core@1.34.24':
+    resolution: {integrity: sha512-FizrNS5CIp7q285qMhLD9WuzlIyhLHXTkUDVchFgSV3a6QnJJbdFdbdPIvsrORBNpxSgGwb0KyhTPkw07IJOZg==}
     engines: {node: '>=18.17.0', npm: '>=9.5.0'}
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
@@ -2754,8 +2754,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  undici@6.29.0:
-    resolution: {integrity: sha512-R+RODBqp6i2pPflGdq+xIOUkl+RNfGgHwoinecKu/JCuf2uO06cOKoDbI2P7Dn6KcswdKwrczbU6IYJ6K8X+wg==}
+  undici@6.29.1:
+    resolution: {integrity: sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==}
     engines: {node: '>=18.17'}
 
   unique-filename@2.0.1:
@@ -3407,7 +3407,7 @@ snapshots:
       require-from-string: 2.0.2
       uri-js-replace: 1.0.1
 
-  '@redocly/cli@1.34.22(ajv@6.14.0)(encoding@0.1.13)(supports-color@7.2.0)':
+  '@redocly/cli@1.34.24(ajv@6.14.0)(encoding@0.1.13)(supports-color@7.2.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/exporter-trace-otlp-http': 0.222.0(@opentelemetry/api@1.9.0)
@@ -3415,8 +3415,8 @@ snapshots:
       '@opentelemetry/sdk-trace-node': 2.11.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.27.0
       '@redocly/config': 0.22.0
-      '@redocly/openapi-core': 1.34.22(supports-color@7.2.0)
-      '@redocly/respect-core': 1.34.22(ajv@6.14.0)(supports-color@7.2.0)
+      '@redocly/openapi-core': 1.34.24(supports-color@7.2.0)
+      '@redocly/respect-core': 1.34.24(ajv@6.14.0)(supports-color@7.2.0)
       abort-controller: 3.0.0
       chokidar: 4.0.3
       colorette: 1.4.0
@@ -3446,7 +3446,7 @@ snapshots:
 
   '@redocly/config@0.22.0': {}
 
-  '@redocly/openapi-core@1.34.22(supports-color@7.2.0)':
+  '@redocly/openapi-core@1.34.24(supports-color@7.2.0)':
     dependencies:
       '@redocly/ajv': 8.11.2
       '@redocly/config': 0.22.0
@@ -3460,11 +3460,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@redocly/respect-core@1.34.22(ajv@6.14.0)(supports-color@7.2.0)':
+  '@redocly/respect-core@1.34.24(ajv@6.14.0)(supports-color@7.2.0)':
     dependencies:
       '@faker-js/faker': 7.6.0
       '@redocly/ajv': 8.11.2
-      '@redocly/openapi-core': 1.34.22(supports-color@7.2.0)
+      '@redocly/openapi-core': 1.34.24(supports-color@7.2.0)
       better-ajv-errors: 1.2.0(ajv@6.14.0)
       colorette: 2.0.20
       concat-stream: 2.0.0
@@ -3480,7 +3480,7 @@ snapshots:
       openapi-sampler: 1.7.0
       outdent: 0.8.0
       set-cookie-parser: 2.7.1
-      undici: 6.29.0
+      undici: 6.29.1
     transitivePeerDependencies:
       - ajv
       - supports-color
@@ -5303,7 +5303,7 @@ snapshots:
 
   redoc@2.5.3(core-js@3.32.1)(encoding@0.1.13)(mobx@6.12.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.5.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(supports-color@7.2.0):
     dependencies:
-      '@redocly/openapi-core': 1.34.22(supports-color@7.2.0)
+      '@redocly/openapi-core': 1.34.24(supports-color@7.2.0)
       classnames: 2.5.1
       core-js: 3.32.1
       decko: 1.2.0
@@ -5695,7 +5695,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici@6.29.0: {}
+  undici@6.29.1: {}
 
   unique-filename@2.0.1:
     dependencies:
